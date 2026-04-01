@@ -1,14 +1,15 @@
-import { config } from "dotenv";
-config();
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // GEMINI_API_KEY
 // MISTRAL_API_KEY
 // COHERE_API_KEY
 
 type CONFIG = {
-    readonly GOOGLE_API_KEY:String;
-    readonly MISTRAL_API_KEY:String;
-    readonly COHERE_API_KEY:String;
+    readonly GOOGLE_API_KEY:string;
+    readonly MISTRAL_API_KEY:string;
+    readonly COHERE_API_KEY:string;
 }
 
 const config: CONFIG={
